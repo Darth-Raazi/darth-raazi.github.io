@@ -9,7 +9,7 @@ body {
     /* Prevents background gradient from repeating due to extneded height */
     background-attachment: fixed;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-color: #0F52BA !important;
+    background-color: #191970 !important;
 }
 
 h2{
@@ -176,7 +176,7 @@ h3{
 
 #projects {
     padding: 60px 0;
-    background-color: #ffffff;
+    background-color: #097969;
 }
 
 #experience {
@@ -185,14 +185,11 @@ h3{
 
 #skills {
     padding: 60px 0;
-}
-
-#contact {
-    padding: 60px 0;
+    background-color: #097969;
 }
 
 #projects-divider {
-    background-color: #ffffff;
+    background-color: #097969;
 }
 
 /* ========== Nav bar ========== */

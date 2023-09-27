@@ -51,7 +51,7 @@
 
 <body>
     <!---------- Navbar ---------->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #191970;">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #000000;">
         <div class="container-fluid">
             <a href="#" class="navbar-brand" style="color: #efefef; font-family:'Montserrat'; font-weight: bold; font-size: 2rem;">
                 <span>Ozayr Raazi</span>
@@ -208,7 +208,7 @@
     <!-- SVG divider -->
     <section class="divider" id="projects-divider">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#0F52BA" fill-opacity="1"
+            <path fill="#191970" fill-opacity="1"
                 d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,218.7C672,245,768,267,864,261.3C960,256,1056,224,1152,213.3C1248,203,1344,213,1392,218.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
             </path>
         </svg>
@@ -218,33 +218,15 @@
     <!---------- Projects section ---------->
     <section id="projects">
         <div class="container pt-5">
-            <h1 class="section-title" style="color: #4169E1;">Projects</h1>
-            <div class="line-break" style="background-color: #978249;"></div>
+            <h1 class="section-title" style="color: #ffffff;">Projects</h1>
+            <div class="line-break" style="background-color: #ffffff;"></div>
             <!-- Radio button section-->
             <div class="btn-group my-3" role="group">
-                <!-- Games -->
-                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiogames" autocomplete="off"
-                    button-target="games" checked>
-                <label for="btnradiogames" class="btn btn-projects"><span
-                        class="align-middle material-icons-outlined" style="font-size: 3rem;">sports_esports</span> Games</label>
-
                 <!-- Hardware -->
                 <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiohardware" autocomplete="off"
                     button-target="hardware">
                 <label for="btnradiohardware" class="btn btn-projects"><span
                         class="align-middle material-icons-outlined" style="font-size: 3rem;">memory</span> Hardware</label>
-
-                <!-- Other -->
-                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradioother" autocomplete="off"
-                    button-target="other">
-                <label for="btnradioother" class="btn btn-projects"><span
-                        class="align-middle material-icons-outlined" style="font-size: 3rem;">terminal</span> Other</label>
-
-                <!-- Music -->
-                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiomusic" autocomplete="off"
-                    button-target="music">
-                <label for="btnradiomusic" class="btn btn-projects"><span
-                        class="align-middle material-icons-outlined" style="font-size: 3rem;">piano</span> Music</label>
             </div>
 
             <!---------- Cards ---------->
@@ -293,197 +275,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Spatial Mapping LIDAR System -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/LIDAR_scan.webp" id='landscape-img' alt="Spatial Mapping LIDAR system"
-                            class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">LIDAR Mapping</h2>
-                            <p class="card-text">A 3D spatial mapping LIDAR system built around the TI MSP432E401Y
-                                micrcontroller in conjunction with MATLAB to visualize the data</p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Spatial_Mapping_LIDAR"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">MATLAB</span>
-                            <span class="badge projects-badge">C</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- IEEE McMaster Buck Converter -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/buck_converter.webp" alt="Buck Converter Icon" class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Buck Converter</h2>
-                            <p class="card-text">McMaster IEEE buck converter soldering workshop</p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://www.ieeemcmaster.ca/"><span class="badge projects-link-badge"><img
-                                        src="https://img.icons8.com/ios-glyphs/512/ffffff/external-link.png"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">Soldering</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!--2EI4 Projects-->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="https://img.icons8.com/fluency/512/null/transistor.png" alt="Led Icon"
-                            class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">2EI4 Projects</h2>
-                            <p class="card-text">McMaster University Electronic Devices and Circuits I course projects.
-                                DC power supply, voltage controlled switch, amplifier, & CMOS logic gate.
-                            </p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/ELECENG_2EI4"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">Oscilloscope</span>
-                            <span class="badge projects-badge">PSpice</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bluetooth RGB Strip-->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/led.webp" alt="Led Icon" class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Bluetooth RGB Strip</h2>
-                            <p class="card-text">Adding bluetooth functionality to a RGB strip using an Arduino Uno and HC-08 module.
-                            </p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Bluetooth_RGB_Strip"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">Arduino</span>
-                            <span class="badge projects-badge">C++</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Arduino Weather Station -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/weather-news.webp" alt="Weather Station Icon" class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Arduino Weather Station</h2>
-                            <p class="card-text">A TFT display that shows the current weather using an API & a Wifi
-                                module for the Arduino board
-                            </p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Arduino_Weatherstation"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">Arduino</span>
-                            <span class="badge projects-badge">C++</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Arduino Raspberry Pi Communication -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/Rasp-Arduino.webp" alt="Raspberry Pi & Arduino Communication Icon"
-                            class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Arduino & Raspberry PI</h2>
-                            <p class="card-text">One way serial communication between an Arduino board and a Raspberry
-                                Pi board using UART
-                            </p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Serial-Communication_RaspberryPi_Arduino"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge">Arduino</span>
-                            <span class="badge projects-badge">Raspberry Pi</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Ultrasonic Sonar -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/sonar.webp" alt="Ultrasonic Sonar Icon" class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Ultrasonic Sonar</h2>
-                            <p class="card-text">A sonar device using a HC-04 ultrasonic sensor on the Raspberry PI</p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Ultrasonic_Sonar"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge ">Raspberry PI</span>
-                            <span class="badge projects-badge">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Google Home Arduino -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/voice-assistant.webp" alt="Ultrasonic Sonar Icon" class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Google Home Arduino</h2>
-                            <p class="card-text">Triggering Google Home functions using the Google Home API, ESP8266
-                                WiFi module, and Arduino IR remote</p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Googlemini_Arduino"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge ">Arduino</span>
-                            <span class="badge projects-badge">C++</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Local Webserver -->
-                <div class="col-lg-4 mb-5 card-container hide" card-group="hardware">
-                    <div class="card projects-small-cards">
-                        <img src="./assets/networking.webp" alt="Ultrasonic Sonar Icon" class="small-cards-img" loading="lazy">
-                        <div class="card-body">
-                            <h2 style="color: #383838;">Local Webserver</h2>
-                            <p class="card-text">Hosting a local website on a Raspberry Pi using the HTTP servers
-                                library</p>
-                        </div>
-                        <!-- Tools used badges -->
-                        <div class="badges-group-small">
-                            <a href="https://github.com/Raziz1/Hosting_Local_HTTP_Server"><span
-                                    class="badge projects-link-badge"><img
-                                        src="./assets/github.svg"
-                                        class="projects-badge-icons" /></span></a>
-                            <span class="badge projects-badge ">Raspberry Pi</span>
-                            <span class="badge projects-badge">Python</span>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -491,7 +282,7 @@
     <!-- Section Divider -->
     <div class="divider" id="skills-divider">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1"
+            <path fill="#097969" fill-opacity="1"
                 d="M0,224L48,202.7C96,181,192,139,288,144C384,149,480,203,576,208C672,213,768,171,864,176C960,181,1056,235,1152,245.3C1248,256,1344,224,1392,208L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
             </path>
         </svg>
@@ -658,6 +449,15 @@
         </div>
     </section>
 
+    <!-- SVG divider -->
+    <section class="divider" id="projects-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#191970" fill-opacity="1"
+                d="M0,256L48,234.7C96,213,192,171,288,165.3C384,160,480,192,576,218.7C672,245,768,267,864,261.3C960,256,1056,224,1152,213.3C1248,203,1344,213,1392,218.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+    </section>
+
     <!---------- Skills section ---------->
     <section id="skills">
         <div class="container pt-5">
@@ -785,10 +585,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer mt-5" style="background-color: #191970;">
+    <footer class="footer" style="background-color: #000000;">
         <div class="container text-center">
             <div class="col-12 p-2">
-                <h3 style="color: #efefef; font-family: 'Source Sans Pro'; font-size: 1rem;">Based on a design by Rahim Aziz</h3>
+                <h3 style="color: #efefef; font-family: 'Source Sans Pro'; font-size: 1rem;">
+                    Created by Ozayr Raazi. Based on a design by <a href="https://raziz1.github.io/">Rahim Aziz</a>
+                </h3>
             </div>
     </footer>
 
