@@ -9,7 +9,7 @@ body {
     /* Prevents background gradient from repeating due to extneded height */
     background-attachment: fixed;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-color: #383838 !important;
+    background-color: #0F52BA !important;
 }
 
 h2{
