@@ -178,20 +178,24 @@ h3{
 
 #projects {
     padding: 60px 0;
-    background-color: #097969;
+    background-color: #3C6E71;
 }
 
 #experience {
     padding: 60px 0;
 }
 
+#education {
+    padding: 60px 0;
+    background-color: #3C6E71;
+}
+
 #skills {
     padding: 60px 0;
-    background-color: #097969;
 }
 
 #projects-divider {
-    background-color: #097969;
+    background-color: #3C6E71;
 }
 
 /* ========== Nav bar ========== */
@@ -230,7 +234,7 @@ h3{
 /* ========== Intro Section ========== */
 .name {
     font-family: "Montserrat";
-    color: #d9c084 !important;
+    color: #efefef !important;
     font-size: 4em;
     font-weight: 800;
     transition: ease-in-out 0.2s;
@@ -433,7 +437,7 @@ input[name="btnradioprojects"]:checked+label {
     align-items: center;
     border-radius: 5px;
     overflow: auto;
-    background-color: #efefef;
+    background-color: #212121;
     height: 100%;
     transition: 0.2s ease-in-out;
     border: none;
@@ -466,10 +470,13 @@ input[name="btnradioprojects"]:checked+label {
     justify-content: flex-start;
 }
 
+.card-body h2 {
+    color: #efefef !important;
+}
+
 .card-text {
     font-family: "Montserrat";
-    color: #383838 !important;
-    /*color: #000000!important;*/
+    color: #efefef !important;
 }
 
 .card-img-projects {
@@ -526,13 +533,13 @@ input[name="btnradioprojects"]:checked+label {
 .projects-badge {
     padding: 10px;
     border-radius: 5px;
-    background-color: #978249;
+    background-color: #D00000;
 }
 
 .projects-link-badge {
     padding: 10px;
     border-radius: 50%;
-    background-color: #978249;
+    background-color: #D00000;
     transition: 0.3s ease-in-out;
 }
 
@@ -563,7 +570,7 @@ input[name="btnradioprojects"]:checked+label {
     content: '';
     position: absolute;
     width: 6px;
-    background-color: #978249;
+    background-color: #D00000;
     top: 0;
     bottom: 0;
     left: 0%;
@@ -577,7 +584,7 @@ input[name="btnradioprojects"]:checked+label {
     width: 25px;
     height: 25px;
     left: -13px;
-    background-color: #383838;
+    background-color: #3C6E71;
     border: 4px solid white;
     top: 45%;
     border-radius: 50%;
@@ -685,7 +692,8 @@ input[name="btnradioprojects"]:checked+label {
     color: #efefef;
     font-family: 'Montserrat'; 
     font-size: 1rem; 
-    background-color: #978249;
+    background-color: #D00000;
+    vertical-align: bottom;
     transition: 0.2s ease-in-out;
 }
 
