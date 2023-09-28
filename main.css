@@ -411,12 +411,12 @@ h3{
 
 /* Radiobutton sections */
 input[name="btnradioprojects"]:checked+label {
-    background-color: #a5915f;
+    background-color: #5D3FD3;
 }
 
 .btn-projects {
     font-family: "Montserrat";
-    background-color: #978249;
+    background-color: #1434A4;
     color: #efefef !important;
     font-size: 4vw;
     box-shadow: none !important;
@@ -425,7 +425,7 @@ input[name="btnradioprojects"]:checked+label {
 }    
 
 .btn-projects:hover {
-    background-color: #a5915f;
+    background-color: #5D3FD3;
 }
 
 /* ---------- Large Cards ---------- */
