@@ -251,11 +251,15 @@ h3{
 
 /* Cursor */
 .typed-cursor {
-    height:100%; color: #d9c084 !important; font-size: 150%;
+    height:100%; 
+    color: #d9c084 !important; 
+    font-size: 150%;
 }
 
 .intro-image {   
-    width: 30vw; border-radius: 50%;
+    width: 30vw; 
+    border-radius: 50%;
+    background-color: #45F0DF;
 }
 
 /*===== Background design wires =====*/
@@ -265,7 +269,7 @@ h3{
  
     .btn-projects {
         font-family: "Montserrat";
-        background-color: #978249;
+        background-color: #1434A4;
         color: #efefef !important;
         font-size: 1.5rem !important;
         box-shadow: none !important;
@@ -363,6 +367,13 @@ h3{
     font-family: "Montserrat";
     color: #efefef;
     font-size: 3rem;
+    font-weight: bold;   
+}
+
+.section-subtitle {
+    font-family: "Montserrat";
+    color: #efefef;
+    font-size: 2.5rem;
     font-weight: bold;   
 }
 
