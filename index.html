@@ -17,9 +17,6 @@
     <meta property="og:url" content="./">    
     <meta property="og:locale" content="en_US">
     <meta property="og:description" content="Hi! I'm Ozayr Raazi, a Computer Engineering student at the University of Waterloo in Canada. Welcome to my website!">
-    <!-- <meta property="og:image" content="https://raziz1.github.io/assets/social_preview.webp"> -->
-    <!-- Google Verification -->
-    <!-- <meta name="google-site-verification" content="9K4znNcWSkXvRzE3oqRXqDW6pe8ajNFyjIwewh8pdXE" /> -->
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,17 +27,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" rel="preload" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" rel="preload" as="style">
 
-    <!-- Helvetica Neue Font -->
-    <!--
-    <style type="text/css">
-        @font-face {
-            font-family: "Helvetica-Neue";
-            src: url("assets/Helvetica_Neue_97_Black_Condensed_Oblique.otf") format("woff");
-            font-weight: bold;
-            font-display: swap;
-        }
-    </style>
-    -->
     <!-- Using Google Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" rel="preload" as="style">
 
@@ -82,7 +68,7 @@
                         <a href="#skills" class="nav-link">Skills</a>
                     </li>
                     <li class="nav-item resume">
-                        <a href="https://drive.google.com/drive/folders/1vNHTdp5xtKy45s62uS2Vh0Y35cB0Sjei?usp=sharing" 
+                        <a href="./files/Ozayr-Raazi-Resume.pdf"
                             class="nav-link">Resume</a>
                     </li>
                 </ul>
@@ -138,7 +124,7 @@
                             <img src="./assets/linkedin.svg" alt="Linkedin Logo" class="header-img" width="50rem" height="auto" style="filter: invert(1);">
                         </button>
                         <button type="button" class="social-buttons"
-                            onclick="window.location.href='https://drive.google.com/drive/folders/1vNHTdp5xtKy45s62uS2Vh0Y35cB0Sjei?usp=sharing'">
+                            onclick="window.location.href='./files/Ozayr-Raazi-Resume.pdf'">
                             <img src="./assets/cv.svg" alt="CV Logo" class="header-img" width="50rem" height="auto" style="filter: invert(1);">
                         </button>
                         <button type="button" class="social-buttons"
@@ -245,13 +231,14 @@
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
-                                <h2>Omnibus Dashboard</h2>
-                                <p class="card-text">
-                                    A GUI dashboard for Waterloo Rocketry's data collection and visualization tool: Omnibus.
-                                    Redesigned using the QGraphicsView framework to add a large, scrollable plane with floating
-                                    widgets on top. Increased navigation and configuration ease-of-use, as well as allowed for
-                                    greater flexibility in the layout of widgets.
-                                </p>
+                                <h2>Omnibus</h2>
+                                <ul>
+                                    <li class="card-text">Waterloo Rocketry's unified bus for data collection and visualization written in Python</li>
+                                    <li class="card-text">Redesigned the dashboard that displays sensor data, enhancing navigation and configuration ease-of-use,
+                                        by rewriting the code using the QGraphicsView framework and PyQtGraph</li>
+                                    <li class="card-text">Reduced startup time by 67% by creating a launcher to automatically start all required processes in the
+                                        background based on user input and ensure clean exiting</li>
+                                </ul>
                             </div>
 
                             <!-- Tools used badges -->
@@ -263,14 +250,15 @@
                                             style="filter: invert(1);"/>
                                     </span></a>
                                 <span class="badge projects-badge">Python</span>
-                                <span class="badge projects-badge">QGraphicsView</span>
                                 <span class="badge projects-badge">PyQtGraph</span>
+                                <span class="badge projects-badge">QGraphicsView</span>
+                                <span class="badge projects-badge">Subprocess</span>
                             </div>
                         </div>
 
                         <!-- Project image -->
                         <div class="col-lg-7">
-                            <img class="card-img-projects"  src="./assets/python.webp" alt="Python Logo Picture" loading="lazy">
+                            <img class="card-img-projects"  src="./assets/omnibus.webp" alt="Omnibus Dashboard Picture" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -281,10 +269,17 @@
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
                                 <h2>Sand Crab</h2>
-                                <p class="card-text">
+                                <!-- <p class="card-text">
                                     A custom remote-controlled car with a 3D printed claw. 
                                     Powered by 2 Arduino boards and an nRF24L01 radio module.
-                                </p>
+                                </p> -->
+                                <ul>
+                                    <li class="card-text">Designed and built a remote-controlled car with a 3D-printed claw for transporting small objects</li>
+                                    <li class="card-text">Programmed an Arduino board to control a DC motor (for forward/back movement) and 4 servo motors (for
+                                        turning and claw control)</li>
+                                    <li class="card-text">Programmed a second Arduino board to communicate with the first using nRF24L01 wireless
+                                        communication modules (over 2.4Ghz radio) and act as a remote control</li>
+                                </ul>
                             </div>
 
                             <!-- Tools used badges -->
@@ -314,11 +309,16 @@
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
                                 <h2>Spidey Sense</h2>
-                                <p class="card-text">
+                                <!-- <p class="card-text">
                                     A PCB designed using KiCAD for Waterloo Rocketry's DAQ system, connects
                                     up to 4 thermistors to signal conversion daughter boards. Soldered components
                                     by hand and integrated board into the DAQ box.
-                                </p>
+                                </p> -->
+                                <ul>
+                                    <li class="card-text">A PCB connecting up to 4 thermistors and conversion board to Waterloo Rocketry's DAQ system</li>
+                                    <li class="card-text">Designed the electrical schematic and PCB using KiCAD</li>
+                                    <li class="card-text">Soldered components by hand and integrated the board into the DAQ box</li>
+                                </ul>
                             </div>
 
                             <!-- Tools used badges -->
@@ -349,11 +349,16 @@
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
                                 <h2>Personal NAS</h2>
-                                <p class="card-text">
+                                <!-- <p class="card-text">
                                     A personal Network Attached Storage (NAS) server built from an old PC running UnraidOS.
                                     Currently has a capacity of more than 6TB along with SMB shares, Docker containers and Virtual 
                                     Machines functionality. Nextcloud enables a private cloud for files hosted on the server.
-                                </p>
+                                </p> -->
+                                <ul>
+                                    <li class="card-text">A personal Network Attached Storage (NAS) server built from an old PC running UnraidOS</li>
+                                    <li class="card-text">Configured SMB shares to act as a network backup destination</li>
+                                    <li class="card-text">Enabled private and self-hosted document cloud, Pi-Hole instance, and Git reposity hosting service</li>
+                                </ul>
                             </div>
 
                             <!-- Tools used badges -->
@@ -361,7 +366,6 @@
                                 <span class="badge projects-badge">Docker</span>
                                 <span class="badge projects-badge">Virtual Machines</span>
                                 <span class="badge projects-badge">Unraid</span>
-                                <span class="badge projects-badge">SysAdmin</span>
                                 <span class="badge projects-badge">PC Hardware</span>
                             </div>
                         </div>
@@ -379,11 +383,17 @@
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
                                 <h2>Hexacopter Drone</h2>
-                                <p class="card-text">
+                                <!-- <p class="card-text">
                                     A powerful 6-rotor drone built around the DJI Naza M2 flight controller.
                                     Wired and calibrated, successfully flown up to 100ft. Repaired and upgraded
                                     with 3D printed components after a crash.
-                                </p>
+                                </p> -->
+                                <ul>
+                                    <li class="card-text">Built a 6-rotor drone using a DJI Naza M2 flight controller resulting in a successful test flight of up to 100ft</li>
+                                    <li class="card-text">Wired and calibrated GPS, sensors, communication module, video transmitter, and power module, and interfaced them
+                                        with the flight controller and motors</li>
+                                    <li class="card-text">Repaired and upgraded the drone after a crash by 3D-printing stronger structural components and resoldering sensor connections</li>
+                                </ul>
                             </div>
 
                             <!-- Tools used badges -->
@@ -440,53 +450,17 @@
                                 </div>
                                 <div class="flip-card-back">
                                     <h2 style="color: #efefef; padding-top: 2%;">Embedded Software Engineer (Co-op)</h2>
-                                    <h3 class="sourcesanspro-text">Python | C/C++</h3>
+                                    <h3 class="sourcesanspro-text">Python | C/C++ | GoogleTest</h3>
                                     <ul>
-                                        <li class="sourcesanspro-text">Currently working here!</li>
+                                        <li class="sourcesanspro-text">Increased thread safety of code and protected internal data structures by converting APIs to signal-based</li>
+                                        <li class="sourcesanspro-text">Improved error-detection of a TCP-transport library by creating GoogleTest unit tests, allowing for send and
+                                            receive functionalities to be tested concurrently using multi-threading</li>
+                                        <li class="sourcesanspro-text">Enabled rapid iteration/testing for a Segment-Routing module by pulling it out of the main build, mocking
+                                            dependencies and configuring CMAKE to allow for independent compilation</li>
+                                        <li class="sourcesanspro-text">Debugged crashes by configuring and testing various networking protocols on simulators and hardware</li>
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
                                         <a class="btn btn-contact" href='https://www.ciena.ca/' role="button">
-                                            Visit Website
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dell -->
-                <div class="timeline mt-5">
-                    <div class="row timeline-container pt-5">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front"
-                                    style="background-image: url(./assets/dell_technologies.webp); background-size: cover; background-repeat: no-repeat;" loading="lazy">
-                                    <h2 style="color: #efefef; padding-top: 2%;">Dell</h2>
-                                    <h3 style="color: #efefef; font-size: 1rem;">Software Engineer (Co-op)</h3>
-                                    <h3 class="sourcesanspro-text" style="font-style: italic;">Jan. 2023 - April 2023</h3>
-                                    <div class="d-none d-sm-block mt-auto mb-auto">
-                                        <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://www.dell.ca/' role="button">
-                                            <img src="./assets/dell_logo.webp" alt="Formula Logo" class="timeline-icon" loading="lazy">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h2 style="color: #efefef; padding-top: 2%;">Software Engineer (Co-op)</h2>
-                                    <h3 class="sourcesanspro-text">Python | Jenkins | Coverity | qTest | Docker</h3>
-                                    <ul>
-                                        <li class="sourcesanspro-text">Enhanced security of a PCIe card by implementing Trusted Boot features such as allowing binary signing without
-                                            access to private RSA keys
-                                        </li>
-                                        <li class="sourcesanspro-text">Eliminated the need for physical boards for initial firmware testing by configuring and documenting an ARM
-                                            emulator</li>
-                                        <li class="sourcesanspro-text">Improved testing capabilities by increasing the number of automated tests running in Docker containers, creating
-                                            new Robot Framework software robots</li>
-                                        <li class="sourcesanspro-text">Increased software security by enabling fast discovery of potential vulnerabilities by creating Jenkins CI pipelines to
-                                            run code analysis using Coverity</li>
-                                    </ul>
-                                    <div class="col-12 text-end text-sm-start">
-                                        <a class="btn btn-contact" href='https://www.dell.ca/' role="button">
                                             Visit Website
                                         </a>
                                     </div>
@@ -517,15 +491,56 @@
                                     <h3 class="sourcesanspro-text">Python | C | KiCAD</h3>
                                     <ul>
                                         <li class="sourcesanspro-text">Contributed to a team of 60+ people for the annual development and launch of a rocket to 30,000 ft</li>
-                                        <li class="sourcesanspro-text">Improved data collection capabilities for engine tests and added support for thermocouples by creating electrical
-                                            schematics and designing PCBs using KiCAD</li>
-                                        <li class="sourcesanspro-text">Streamlined testing operations and rocket monitoring by developing Python software for data acquisition and
-                                            visualization</li>
-                                        <li class="sourcesanspro-text">Enhanced Kalman filter for estimating rocket position during flight by developing C code to convert coordinates
+                                        <li class="sourcesanspro-text">Increased organization in the Software subsystem by creating a GitHub Project board for issue tracking and
+                                            by adding branch naming conventions, PR templates and repository Codeowners</li>
+                                        <li class="sourcesanspro-text">Facilitated development by onboarding new members, breaking down projects into individual issues,
+                                            creating and maintaining timelines, supporting developers, and reporting progress to team leads</li>
+                                        <li class="sourcesanspro-text">Augmented data collection capabilities for engine tests and added support for thermocouples by creating
+                                            electrical schematics and designing PCBs using KiCAD</li>
+                                        <li class="sourcesanspro-text">Optimized Kalman filter for estimating rocket position during flight by developing C code to convert coordinates
                                             between reference frames using rotation matrices</li>
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
                                         <a class="btn btn-contact" href='https://waterloorocketry.com/' role="button">
+                                            Visit Website
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dell -->
+                <div class="timeline mt-5">
+                    <div class="row timeline-container pt-5">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front"
+                                    style="background-image: url(./assets/dell_technologies.webp); background-size: cover; background-repeat: no-repeat;" loading="lazy">
+                                    <h2 style="color: #efefef; padding-top: 2%;">Dell</h2>
+                                    <h3 style="color: #efefef; font-size: 1rem;">Software Engineer (Co-op)</h3>
+                                    <h3 class="sourcesanspro-text" style="font-style: italic;">Jan. 2023 - April 2023</h3>
+                                    <div class="d-none d-sm-block mt-auto mb-auto">
+                                        <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://www.dell.ca/' role="button">
+                                            <img src="./assets/dell_logo.webp" alt="Formula Logo" class="timeline-icon" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2 style="color: #efefef; padding-top: 2%;">Software Engineer (Co-op)</h2>
+                                    <h3 class="sourcesanspro-text">Python | Jenkins | Coverity | qTest | Docker</h3>
+                                    <ul>
+                                        <li class="sourcesanspro-text">Enhanced security of a PCIe card by implementing Trusted Boot features such as allowing binary signing
+                                            without access to private RSA keys</li>
+                                        <li class="sourcesanspro-text">Eliminated the need for physical boards for initial firmware testing by configuring an ARM emulator</li>
+                                        <li class="sourcesanspro-text">Improved testing capabilities by increasing the number of automated tests running in Docker containers,
+                                            creating new Robot Framework software robots</li>
+                                        <li class="sourcesanspro-text">Boosted software security by enabling fast discovery of potential vulnerabilities by creating Jenkins CI
+                                            pipelines to run code analysis using Coverity</li>
+                                    </ul>
+                                    <div class="col-12 text-end text-sm-start">
+                                        <a class="btn btn-contact" href='https://www.dell.ca/' role="button">
                                             Visit Website
                                         </a>
                                     </div>
@@ -646,7 +661,7 @@
             <!-- Tools -->
             <div class="row mb-3">
                 <div class="col-lg-2 text-center text-lg-end mt-auto mb-auto">
-                    <h3 class="montserrat-text">Tools</h3>
+                    <h3 class="montserrat-text">Developer Tools</h3>
                 </div>
                 <div class="col-lg-10 text-center text-lg-start">
                     <a class="btn btn-skills text-center" role="button">
