@@ -18,6 +18,11 @@ for (let i = 0; i < button.length; i++) {
   })
 }
 
+//========== Select hardware project by default ==========//
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('btnradiohardware').click();
+});
+
 //========== Skills slide in animation ==========//
 if (/Mobi/.test(navigator.userAgent)) {
   // If this device is a mobile user then don't do anything

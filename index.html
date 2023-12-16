@@ -118,7 +118,7 @@
                     <h1 class="name">OZAYR RAAZI</h1>
                     <p class="typewriter-title"><!--Computer Engineering @ University of Waterloo--></p>
                     <div style="margin-left: -1rem;">
-                        <!-- Linkedin & Github button links -->
+                        <!-- Linkedin, Resume & Github button links -->
                         <button type="button" class="social-buttons"
                             onclick="window.location.href='https://www.linkedin.com/in/ozayr-raazi-20596a211/'">
                             <img src="./assets/linkedin.svg" alt="Linkedin Logo" class="header-img" width="50rem" height="auto" style="filter: invert(1);">
@@ -196,7 +196,6 @@
 
                 <!-- SVG background design-->
                 <div class="col-sm-5 parent-about-image">
-                    <!-- <img class="svg-background d-none d-sm-block" src="./assets/frame_circuit.svg" alt="Circuit Frame Pic" loading="lazy"> -->
                     <!-- Personal about image -->
                     <img class="about-image d-none d-sm-block" src="./assets/profile_old.webp" alt="Old Profile Pic" loading="lazy">
                 </div>
@@ -221,13 +220,62 @@
             <div class="line-break" style="background-color: #ffffff;"></div>
             <!-- Radio button section-->
             <div class="btn-group my-3" role="group">
+                <!-- Hardware -->
+                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiohardware" autocomplete="off"
+                    button-target="hardware" checked>
+                <label for="btnradiohardware" class="btn btn-projects"><span
+                        class="align-middle material-icons-outlined" style="font-size: 3rem;">memory</span> Hardware</label>
+
+                <!-- Software -->
+                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiosoftware" autocomplete="off"
+                    button-target="software">
+                <label for="btnradiosoftware" class="btn btn-projects"><span
+                        class="align-middle material-icons-outlined" style="font-size: 3rem;">terminal</span> Software</label>
+
+                <!-- Other -->
+                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradioother" autocomplete="off"
+                    button-target="other">
+                <label for="btnradioother" class="btn btn-projects"><span
+                        class="align-middle material-icons-outlined" style="font-size: 3rem;">devices_other</span> Other</label>
             </div>
 
             <!---------- Cards ---------->
             <div class="row g-0 justify-content-start">
                 <!-- Large cards -->
-                <!-- Omnibus -->
+                <!-- 8-Bit CPU -->
                 <div class="card projects-large-cards mb-5 card-container" card-group="hardware">
+                    <div class="row g-0">
+                        <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
+                            <div class="card-body">
+                                <h2>8-Bit CPU</h2>
+                                <ul>
+                                    <li class="card-text">Designed and simulated a simple CPU with an 8-bit data bus, 4 registers, a 7-function ALU, and a 256-byte
+                                        RAM block, built from the ground up with logic gates following a Udemy course</li>
+                                    <li class="card-text">Created a custom instruction set with 34 instructions, implemented a 6-cycle fetch and execute process in
+                                        the CPU’s control section, and created an assembly language based on the instruction set</li>
+                                    <li class="card-text">Wrote a Python script to convert assembly code into hexadecimal to load and run on the CPU, successfully
+                                        calculating and storing the result of 5x5 in 16 instructions</li>
+                                </ul>
+                            </div>
+
+                            <!-- Tools used badges -->
+                            <div class="badges-group-large">
+                                <span class="badge projects-badge">Computer Architecture</span>
+                                <span class="badge projects-badge">Logisim</span>
+                                <span class="badge projects-badge">Assembly</span>
+                                <span class="badge projects-badge">Python</span>
+                            </div>
+                        </div>
+
+                        <!-- Project image -->
+                        <div class="col-lg-7">
+                            <img class="card-img-projects"  src="./assets/cpu.webp" alt="Simulated CPU Picture" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Omnibus -->
+                <div class="card projects-large-cards mb-5 card-container" card-group="software">
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
@@ -269,10 +317,6 @@
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
                                 <h2>Sand Crab</h2>
-                                <!-- <p class="card-text">
-                                    A custom remote-controlled car with a 3D printed claw. 
-                                    Powered by 2 Arduino boards and an nRF24L01 radio module.
-                                </p> -->
                                 <ul>
                                     <li class="card-text">Designed and built a remote-controlled car with a 3D-printed claw for transporting small objects</li>
                                     <li class="card-text">Programmed an Arduino board to control a DC motor (for forward/back movement) and 4 servo motors (for
@@ -309,11 +353,6 @@
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
                                 <h2>Spidey Sense</h2>
-                                <!-- <p class="card-text">
-                                    A PCB designed using KiCAD for Waterloo Rocketry's DAQ system, connects
-                                    up to 4 thermistors to signal conversion daughter boards. Soldered components
-                                    by hand and integrated board into the DAQ box.
-                                </p> -->
                                 <ul>
                                     <li class="card-text">A PCB connecting up to 4 thermistors and conversion board to Waterloo Rocketry's DAQ system</li>
                                     <li class="card-text">Designed the electrical schematic and PCB using KiCAD</li>
@@ -338,22 +377,17 @@
                         <!-- Project image -->
                         <div class="col-lg-7">
                             <!-- <img class="card-img-projects"  src="./assets/spidey_pcb.webp" alt="PCB Layout Picture" loading="lazy"> -->
-                            <img class="card-img-projects"  src="./assets/spidey_board.webp" alt="Physical PCB Picture" loading="lazy">
+                            <img class="card-img-projects"  src="./assets/spidey_sense.webp" alt="Physical PCB Picture" loading="lazy">
                         </div>
                     </div>
                 </div>
 
                 <!-- NAS -->
-                <div class="card projects-large-cards mb-5 card-container" card-group="hardware">
+                <div class="card projects-large-cards mb-5 card-container" card-group="other">
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
                                 <h2>Personal NAS</h2>
-                                <!-- <p class="card-text">
-                                    A personal Network Attached Storage (NAS) server built from an old PC running UnraidOS.
-                                    Currently has a capacity of more than 6TB along with SMB shares, Docker containers and Virtual 
-                                    Machines functionality. Nextcloud enables a private cloud for files hosted on the server.
-                                </p> -->
                                 <ul>
                                     <li class="card-text">A personal Network Attached Storage (NAS) server built from an old PC running UnraidOS</li>
                                     <li class="card-text">Configured SMB shares to act as a network backup destination</li>
@@ -378,16 +412,11 @@
                 </div>
 
                 <!-- Hexacopter Drone -->
-                <div class="card projects-large-cards mb-5 card-container" card-group="hardware">
+                <div class="card projects-large-cards mb-5 card-container" card-group="other">
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
                                 <h2>Hexacopter Drone</h2>
-                                <!-- <p class="card-text">
-                                    A powerful 6-rotor drone built around the DJI Naza M2 flight controller.
-                                    Wired and calibrated, successfully flown up to 100ft. Repaired and upgraded
-                                    with 3D printed components after a crash.
-                                </p> -->
                                 <ul>
                                     <li class="card-text">Built a 6-rotor drone using a DJI Naza M2 flight controller resulting in a successful test flight of up to 100ft</li>
                                     <li class="card-text">Wired and calibrated GPS, sensors, communication module, video transmitter, and power module, and interfaced them
@@ -452,12 +481,11 @@
                                     <h2 style="color: #efefef; padding-top: 2%;">Embedded Software Engineer (Co-op)</h2>
                                     <h3 class="sourcesanspro-text">Python | C/C++ | GoogleTest</h3>
                                     <ul>
-                                        <li class="sourcesanspro-text">Increased thread safety of code and protected internal data structures by converting APIs to signal-based</li>
-                                        <li class="sourcesanspro-text">Improved error-detection of a TCP-transport library by creating GoogleTest unit tests, allowing for send and
-                                            receive functionalities to be tested concurrently using multi-threading</li>
-                                        <li class="sourcesanspro-text">Enabled rapid iteration/testing for a Segment-Routing module by pulling it out of the main build, mocking
-                                            dependencies and configuring CMAKE to allow for independent compilation</li>
-                                        <li class="sourcesanspro-text">Debugged crashes by configuring and testing various networking protocols on simulators and hardware</li>
+                                        <li class="sourcesanspro-text">Accelerated iteration and testing of a Segment-Routing module by developing an event-based client for
+                                            simple user interfacing and by configuring CMAKE to enable independent compilation</li>
+                                        <li class="sourcesanspro-text">Improved error-detection of a TCP-transport library by creating C++ GoogleTest unit tests, allowing for send
+                                            and receive functionalities to be tested concurrently using multi-threading</li>
+                                        <li class="sourcesanspro-text">Increased thread safety of C code and protected internal data structures by converting APIs to signal-based</li>
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
                                         <a class="btn btn-contact" href='https://www.ciena.ca/' role="button">
@@ -470,6 +498,45 @@
                     </div>
                 </div>
                 
+                <!-- Dell -->
+                <div class="timeline mt-5">
+                    <div class="row timeline-container pt-5">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front"
+                                    style="background-image: url(./assets/dell_technologies.webp); background-size: cover; background-repeat: no-repeat;" loading="lazy">
+                                    <h2 style="color: #efefef; padding-top: 2%;">Dell</h2>
+                                    <h3 style="color: #efefef; font-size: 1rem;">Software Engineer (Co-op)</h3>
+                                    <h3 class="sourcesanspro-text" style="font-style: italic;">Jan. 2023 - April 2023</h3>
+                                    <div class="d-none d-sm-block mt-auto mb-auto">
+                                        <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://www.dell.ca/' role="button">
+                                            <img src="./assets/dell_logo.webp" alt="Formula Logo" class="timeline-icon" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2 style="color: #efefef; padding-top: 2%;">Software Engineer (Co-op)</h2>
+                                    <h3 class="sourcesanspro-text">Python | Jenkins | Coverity | qTest | Docker</h3>
+                                    <ul>
+                                        <li class="sourcesanspro-text">Enhanced security of a PCIe card by implementing Trusted Boot features such as allowing binary signing
+                                            without access to private RSA keys</li>
+                                        <li class="sourcesanspro-text">Eliminated the need for physical boards for initial firmware testing by configuring an ARM emulator</li>
+                                        <li class="sourcesanspro-text">Improved testing capabilities by increasing the number of automated tests running in Docker containers,
+                                            creating new Robot Framework software robots</li>
+                                        <li class="sourcesanspro-text">Boosted software security by enabling fast discovery of potential vulnerabilities by creating Jenkins CI
+                                            pipelines to run code analysis using Coverity</li>
+                                    </ul>
+                                    <div class="col-12 text-end text-sm-start">
+                                        <a class="btn btn-contact" href='https://www.dell.ca/' role="button">
+                                            Visit Website
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Rocketry -->
                 <div class="timeline mt-5">
                     <div class="row timeline-container pt-5">
@@ -502,45 +569,6 @@
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
                                         <a class="btn btn-contact" href='https://waterloorocketry.com/' role="button">
-                                            Visit Website
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Dell -->
-                <div class="timeline mt-5">
-                    <div class="row timeline-container pt-5">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front"
-                                    style="background-image: url(./assets/dell_technologies.webp); background-size: cover; background-repeat: no-repeat;" loading="lazy">
-                                    <h2 style="color: #efefef; padding-top: 2%;">Dell</h2>
-                                    <h3 style="color: #efefef; font-size: 1rem;">Software Engineer (Co-op)</h3>
-                                    <h3 class="sourcesanspro-text" style="font-style: italic;">Jan. 2023 - April 2023</h3>
-                                    <div class="d-none d-sm-block mt-auto mb-auto">
-                                        <a class="btn btn-skills mx-0" style="max-width: 8rem; min-width: 50px;" href='https://www.dell.ca/' role="button">
-                                            <img src="./assets/dell_logo.webp" alt="Formula Logo" class="timeline-icon" loading="lazy">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="flip-card-back">
-                                    <h2 style="color: #efefef; padding-top: 2%;">Software Engineer (Co-op)</h2>
-                                    <h3 class="sourcesanspro-text">Python | Jenkins | Coverity | qTest | Docker</h3>
-                                    <ul>
-                                        <li class="sourcesanspro-text">Enhanced security of a PCIe card by implementing Trusted Boot features such as allowing binary signing
-                                            without access to private RSA keys</li>
-                                        <li class="sourcesanspro-text">Eliminated the need for physical boards for initial firmware testing by configuring an ARM emulator</li>
-                                        <li class="sourcesanspro-text">Improved testing capabilities by increasing the number of automated tests running in Docker containers,
-                                            creating new Robot Framework software robots</li>
-                                        <li class="sourcesanspro-text">Boosted software security by enabling fast discovery of potential vulnerabilities by creating Jenkins CI
-                                            pipelines to run code analysis using Coverity</li>
-                                    </ul>
-                                    <div class="col-12 text-end text-sm-start">
-                                        <a class="btn btn-contact" href='https://www.dell.ca/' role="button">
                                             Visit Website
                                         </a>
                                     </div>
@@ -593,8 +621,12 @@
                                     <ul>
                                         <li class="sourcesanspro-text">Program: Honours Computer Engineering</li>
                                         <li class="sourcesanspro-text">Current Term: 1B (Co-op)</li>
-                                        <li class="sourcesanspro-text">Relevant Courses: Fundamentals of Programming (C++), 
-                                            Digital Circuits and Systems, Linear Circuits
+                                        <li class="sourcesanspro-text">Relevant Courses:
+                                            <ul>
+                                                <li>ECE 150: Fundamentals of Programming</li>
+                                                <li>ECE 124: Digital Circuits and Systems</li>
+                                                <li>ECE 140: Linear Circuits</li>
+                                            </ul> 
                                         </li>
                                     </ul>
                                     <div class="col-12 text-end text-sm-start">
@@ -627,7 +659,7 @@
             <div class="line-break" style="background-color: #ffffff;"></div>
             <!-- Coding languages -->
             <div class="row mb-3">
-                <div class="col-lg-2 text-center text-lg-end mt-auto mb-auto">
+                <div class="col-lg-2 text-center text-lg-end mt-5 mb-auto">
                     <h3 class="montserrat-text">Languages</h3>
                 </div>
                 <div class="col-lg-10 text-center text-lg-start">
@@ -647,21 +679,18 @@
                             </svg>
                     </a>
                     <a class="btn btn-skills text-center" role="button">
-                        <img src="./assets/bash.svg" width="64" height="64">
-                    </a>
-                    <a class="btn btn-skills text-center" role="button">
                         <img src="./assets/vhdl.webp" width="64" height="64">
                     </a>
                     <a class="btn btn-skills text-center" role="button">
-                        <img src="./assets/groovy.svg" width="64" height="64">
+                        <img src="./assets/bash.svg" width="64" height="64">
                     </a>
                 </div>
             </div>
 
             <!-- Tools -->
             <div class="row mb-3">
-                <div class="col-lg-2 text-center text-lg-end mt-auto mb-auto">
-                    <h3 class="montserrat-text">Developer Tools</h3>
+                <div class="col-lg-2 text-center text-lg-end mt-5 mb-auto">
+                    <h3 class="montserrat-text">Technologies</h3>
                 </div>
                 <div class="col-lg-10 text-center text-lg-start">
                     <a class="btn btn-skills text-center" role="button">
@@ -673,6 +702,9 @@
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 48 48">
                             <path fill="#009688" d="M35.7,34.7c-7.7,0-13.2-8.9-13.4-9.3l-0.6-1l0.6-1C22.5,22.9,28,14,35.7,14C41.4,14,46,18.6,46,24.3 S41.4,34.7,35.7,34.7z M26.4,24.3c1.5,2,5.1,6.3,9.2,6.3c3.5,0,6.3-2.8,6.3-6.3c0-3.5-2.8-6.3-6.3-6.3C31.5,18,27.9,22.3,26.4,24.3 z"></path><path fill="#009688" d="M12.3,34.7C6.6,34.7,2,30,2,24.3S6.6,14,12.3,14c7.9,0,13.2,8.9,13.4,9.3l0.6,1l-0.6,1 C25.5,25.7,20,34.7,12.3,34.7z M12.3,18C8.8,18,6,20.8,6,24.3c0,3.5,2.8,6.3,6.3,6.3c4.2,0,7.8-4.3,9.3-6.3 C20.2,22.3,16.6,18,12.3,18z"></path><path fill="#009688" d="M10 23h6v2h-6V23zM32 23h6v2h-6V23z"></path><path fill="#009688" d="M34,21h2v6h-2V21z"></path>
                             </svg>
+                    </a>
+                    <a class="btn btn-skills text-center" role="button">
+                        <img src="./assets/logisim.svg" width="64" height="64">
                     </a>
                     <a class="btn btn-skills text-center" role="button">
                         <img src="./assets/kicad.webp" width="64" height="64">
@@ -697,7 +729,7 @@
 
             <!-- Operating Systems -->
             <div class="row mb-3">
-                <div class="col-lg-2 text-center text-lg-end mt-auto mb-auto">
+                <div class="col-lg-2 text-center text-lg-end mt-5 mb-auto">
                     <h3 class="montserrat-text">Operating Systems</h3>
                 </div>
                 <div class="col-lg-10 text-center text-lg-start">
