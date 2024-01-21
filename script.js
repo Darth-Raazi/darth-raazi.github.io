@@ -44,9 +44,9 @@ if (/Mobi/.test(navigator.userAgent)) {
 }
 
 var typed = new Typed('.typewriter-title', {
-  strings: ['Computer Engineering @ <b>University of Waterloo</b>',
-   'Embedded Software Engineer @ <b>Ciena</b>',
-   'Software Lead @ <b>Waterloo Rocketry</b>',
+  strings: [ 'Seeking a <b>Summer 2024<b> Co-op!',
+    'Computer Engineering @ <b>University of Waterloo</b>',
+    'Software Lead @ <b>Waterloo Rocketry</b>',
   ],
   typeSpeed: 35,
   loop: true,
