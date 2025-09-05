@@ -44,8 +44,9 @@ if (/Mobi/.test(navigator.userAgent)) {
 }
 
 var typed = new Typed('.typewriter-title', {
-  strings: [ 'Hardware Engineer @ <b>Untether AI</b>',
+  strings: [ 'Seeking <b>Winter 2026</b> Internships',
     'Computer Engineering @ <b>University of Waterloo</b>',
+    'Prev @ <b>Untether AI, Ciena, Dell</b>'
   ],
   typeSpeed: 35,
   loop: true,
