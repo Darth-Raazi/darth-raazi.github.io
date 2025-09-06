@@ -20,7 +20,7 @@ for (let i = 0; i < button.length; i++) {
 
 //========== Select hardware project by default ==========//
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('btnradiohardware').click();
+  document.getElementById('btnradiopcb').click();
 });
 
 //========== Skills slide in animation ==========//

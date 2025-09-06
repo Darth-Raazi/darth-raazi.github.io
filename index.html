@@ -205,11 +205,17 @@
             <div class="line-break" style="background-color: #ffffff;"></div>
             <!-- Radio button section-->
             <div class="btn-group my-3" role="group">
-                <!-- Hardware -->
-                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiohardware" autocomplete="off"
-                    button-target="hardware" checked>
-                <label for="btnradiohardware" class="btn btn-projects"><span
-                        class="align-middle material-icons-outlined" style="font-size: 3rem;">memory</span> Hardware</label>
+                <!-- PCB -->
+                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiopcb" autocomplete="off"
+                    button-target="pcb" checked>
+                <label for="btnradiopcb" class="btn btn-projects"><span
+                        class="align-middle material-icons-outlined" style="font-size: 3rem;">developer_board</span> PCB</label>
+
+                <!-- Digital Logic -->
+                <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiologic" autocomplete="off"
+                    button-target="logic">
+                <label for="btnradiologic" class="btn btn-projects"><span
+                        class="align-middle material-icons-outlined" style="font-size: 3rem;">memory</span> Digital Logic</label>
 
                 <!-- Software -->
                 <input type="radio" class="btn-check" name="btnradioprojects" id="btnradiosoftware" autocomplete="off"
@@ -227,8 +233,47 @@
             <!---------- Cards ---------->
             <div class="row g-0 justify-content-start">
                 <!-- Large cards -->
+                <!-- Biro-1 -->
+                <div class="card projects-large-cards mb-5 card-container" card-group="pcb">
+                    <div class="row g-0">
+                        <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
+                            <div class="card-body">
+                                <h2>Biro-1</h2>
+                                <ul>
+                                    <li class="card-text">Ideated and planned a fully-custom media controller device to address a real-world need of keyboard not
+                                        having hardware media keys, and created a team of 5 people to help realize the project</li>
+                                    <li class="card-text">Defined product requirements, set timelines, organized subsystems, and created high-level tasks for
+                                        delegation among team members</li>
+                                    <li class="card-text">Researched components, designed block and schematic diagrams, and started layout for prototype board,
+                                        while assisting in firmware and RTOS development
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Tools used badges -->
+                            <div class="badges-group-large">
+                                <!-- Github Link -->
+                                <a href="https://github.com/PROJECT-BIRO/Biro-1">
+                                    <span class="badge projects-link-badge">
+                                        <img alt = "Clickable GitHub Icon" src="./assets/github_circle.svg" class="projects-badge-icons" 
+                                            style="filter: invert(1);"/>
+                                    </span></a>
+                                <span class="badge projects-badge">KiCAD</span>
+                                <span class="badge projects-badge">PCB Design</span>
+                                <span class="badge projects-badge">C++</span>
+                                <span class="badge projects-badge">Project Management</span>
+                            </div>
+                        </div>
+
+                        <!-- Project image -->
+                        <div class="col-lg-7">
+                            <img class="card-img-projects"  src="./assets/biro-1-rev-0-bare.png" alt="Printed Circuit Board" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
                 <!-- 8-Bit CPU -->
-                <div class="card projects-large-cards mb-5 card-container" card-group="hardware">
+                <div class="card projects-large-cards mb-5 card-container" card-group="logic">
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
@@ -284,7 +329,6 @@
                                     </span></a>
                                 <span class="badge projects-badge">Python</span>
                                 <span class="badge projects-badge">PyQtGraph</span>
-                                <span class="badge projects-badge">QGraphicsView</span>
                                 <span class="badge projects-badge">Subprocess</span>
                             </div>
                         </div>
@@ -297,7 +341,7 @@
                 </div>
 
                 <!-- Sand Crab -->
-                <div class="card projects-large-cards mb-5 card-container" card-group="hardware">
+                <div class="card projects-large-cards mb-5 card-container" card-group="other">
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
@@ -333,7 +377,7 @@
                 </div>
 
                 <!-- Spidey Sense -->
-                <div class="card projects-large-cards mb-5 card-container" card-group="hardware">
+                <div class="card projects-large-cards mb-5 card-container" card-group="pcb">
                     <div class="row g-0">
                         <div class="col-lg-5 d-flex flex-column justify-content-end mb-3">
                             <div class="card-body">
