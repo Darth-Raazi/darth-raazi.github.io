@@ -68,8 +68,7 @@
                         <a href="#skills" class="nav-link">Skills</a>
                     </li>
                     <li class="nav-item resume">
-                        <a href="./files/Ozayr-Raazi-Resume.pdf"
-                            class="nav-link">Resume</a>
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#resumeModal">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -123,8 +122,7 @@
                             onclick="window.location.href='https://www.linkedin.com/in/ozayr-raazi-20596a211/'">
                             <img src="./assets/linkedin.svg" alt="Linkedin Logo" class="header-img" width="50rem" height="auto" style="filter: invert(1);">
                         </button>
-                        <button type="button" class="social-buttons"
-                            onclick="window.location.href='./files/Ozayr-Raazi-Resume.pdf'">
+                        <button type="button" class="social-buttons" data-bs-toggle="modal" data-bs-target="#resumeModal">
                             <img src="./assets/cv.svg" alt="CV Logo" class="header-img" width="50rem" height="auto" style="filter: invert(1);">
                         </button>
                         <button type="button" class="social-buttons"
@@ -754,7 +752,7 @@
                                         <li class="sourcesanspro-text">Relevant Courses:
                                             <ul>
                                                 <li>ECE 320: Computer Architecture</li>
-                                                <li>ECE 722: Reconfigurable Computing</li>
+                                                <li>ECE 722: Reconfigurable Computing (Graduate-level)</li>
                                                 <li>ECE 351: Compilers</li>
                                                 <li>ECE 327: Digital Hardware Systems</li>
                                                 <li>ECE 350: Real-Time Operating Systems</li>
@@ -898,6 +896,36 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Main local javascript file -->
     <script src="script.js"></script>
+
+    <!-- Resume Selection Modal -->
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+      
+        <!-- Header -->
+        <div class="modal-header border-0">
+            <h5 class="modal-title" id="resumeModalLabel">Select Resume</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body text-center">
+            <a href="./files/Ozayr_Raazi_Resume_pcb.pdf" target="_blank" class="btn m-2">
+            PCB / Embedded
+            </a>
+            <a href="./files/Ozayr_Raazi_Resume_digital.pdf" target="_blank" class="btn m-2">
+            Digital Design
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="modal-footer border-0 justify-content-center">
+            <p>Choose which resume you'd like to view</p>
+        </div>
+        </div>
+    </div>
+    </div>
+
 </body>
 
 </html>

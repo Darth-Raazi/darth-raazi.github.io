@@ -712,3 +712,50 @@ input[name="btnradioprojects"]:checked+label {
     color: #efefef;
     transform: scale(0.90);
 }
+
+/* ===== Resume Selection Modal ===== */
+#resumeModal .modal-content {
+    background-color: #191970; /* site blue */
+    border: 2px solid #978249; /* gold accent */
+    border-radius: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+#resumeModal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#resumeModal .modal-title {
+    color: #efefef;
+    font-weight: 600;
+}
+
+#resumeModal .btn-close {
+    filter: invert(1);
+}
+
+#resumeModal .modal-body .btn {
+    background-color: #212122;
+    color: #efefef;
+    border: 1px solid #978249;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    padding: 0.75rem 2rem;
+    transition: 0.2s ease-in-out;
+}
+
+#resumeModal .modal-body .btn:hover {
+    background-color: #3C6E71; /* site green */
+    color: #efefef;
+    transform: scale(0.95);
+}
+
+#resumeModal .modal-footer p {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin: 0;
+}
